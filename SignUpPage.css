@@ -1,0 +1,21 @@
+input {
+    border-color:red;
+    border-radius: 4px;
+    border-style: groove;
+  }
+#title { font-family: Papyrus, fantasy;
+    font-size: 48px; 
+    font-style: italic; 
+    font-variant: normal; 
+    font-weight: 850; 
+    line-height: 93px; 
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial;
+}
+h1 {
+    text-shadow: 2px 3px 4px #8b0000;
+}
