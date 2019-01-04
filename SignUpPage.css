@@ -13,9 +13,32 @@ input {
 }
 p{
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     font-family: Arial;
+}
+.tc{
+    font-size: 16px;
 }
 h1 {
     text-shadow: 2px 3px 4px #8b0000;
+}
+.container {
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: bold;
+    color: burlywood;
+    text-align: center;
+    background-color: #8b0000;
+    
+
+}
+.clearfix{
+    text-align: center;
+}
+.signupbtn:hover {
+    background-color:#282828;
+}
+
+.cancelbtn:hover{
+    background-color: #C00000;
 }
