@@ -1,0 +1,41 @@
+
+h1 {
+    font-family: Papyrus, fantasy;
+    font-size: 48px;
+    text-align: center;
+    text-shadow: 2px 3px 4px #8b0000;
+    font-style:italic;
+    
+}
+h3 {
+    font-family: Papyrus, fantasy;
+    font-size: 22px;
+    text-align: center;
+}
+
+.signupbtn:hover {
+    background-color:#C00000;
+}
+
+.Loginbtn:hover{
+    background-color: #282828;
+}
+.TS{
+    font-family: Papyrus, fantasy;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+
+}
+.forU{
+    font-family: Papyrus, fantasy;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.EC{
+    font-family: Papyrus, fantasy;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
