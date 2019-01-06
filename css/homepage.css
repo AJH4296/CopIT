@@ -1,0 +1,80 @@
+
+body{
+  background-color: burlywood;
+  font-family: arial;
+}
+
+h1 {
+    font-family: 'Papyrus', fantasy;
+    font-size: 48px;
+    text-align: center;
+    text-shadow: 2px 3px 4px #8b0000;
+    font-style:italic;
+    
+}
+
+h3 {
+    font-family: 'Papyrus', fantasy;
+    font-size: 22px;
+    text-align: center;
+}
+
+#welcomeMsg { text-align: center; }
+
+.ec, .foru {
+    font-family: 'Papyrus', fantasy;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom:100px;
+}
+
+.loginbtn {
+    background-color:black;
+  color: white;
+  padding: 14px 20px;
+  margin: 18px 615px;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  text-align: center;
+} 
+
+.loginbtn:hover{
+    background-color: #282828;
+}
+
+.loginbtn a {
+    font-family: 'Papyrus'; 
+    color:burlywood; 
+    text-decoration: none; 
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.signupbtn {
+    font-family:'Papyrus';
+    background-color:#8b0000;
+    color:burlywood; /*color: white;*/
+    padding: 14px 20px;
+    margin: 18px  615px;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.signupbtn:hover {
+    background-color:#C00000;
+}
+
+.ts {
+    font-family: 'Papyrus', fantasy;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom:50px 0 100px;
+}
