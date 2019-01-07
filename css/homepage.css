@@ -1,13 +1,11 @@
-
-body{
-  background-color: burlywood;
-  font-family: arial;
+button { 
+    border: none; 
+    text-decoration: none;
 }
 
 h1 {
     font-family: 'Papyrus', fantasy;
     font-size: 48px;
-    text-align: center;
     text-shadow: 2px 3px 4px #8b0000;
     font-style:italic;
     
@@ -16,28 +14,25 @@ h1 {
 h3 {
     font-family: 'Papyrus', fantasy;
     font-size: 22px;
-    text-align: center;
 }
 
-#welcomeMsg { text-align: center; }
+/*#welcomeMsg { text-align: center; }*/
 
-.ec, .foru {
+.ec, .foru, .ts {
     font-family: 'Papyrus', fantasy;
     font-size: 30px;
-    text-align: center;
+    color: #000;
     font-weight: bold;
-    padding-bottom:100px;
+    padding:100px 0;
 }
 
 .loginbtn {
     background-color:black;
-  color: white;
-  padding: 14px 20px;
-  margin: 18px 615px;
-  border: none;
-  cursor: pointer;
-  width: 10%;
-  text-align: center;
+    color: white;
+    padding: 14px 20px;
+    margin: 18px auto;
+    cursor: pointer;
+    width: 10%;
 } 
 
 .loginbtn:hover{
@@ -46,8 +41,7 @@ h3 {
 
 .loginbtn a {
     font-family: 'Papyrus'; 
-    color:burlywood; 
-    text-decoration: none; 
+    color: burlywood; 
     font-weight: 900;
     font-size: 18px;
 }
@@ -55,26 +49,15 @@ h3 {
 .signupbtn {
     font-family:'Papyrus';
     background-color:#8b0000;
-    color:burlywood; /*color: white;*/
+    color: burlywood; /*color: white;*/
     padding: 14px 20px;
-    margin: 18px  615px;
-    border: none;
+    margin: 18px auto;
     cursor: pointer;
     width: 10%;
-    text-align: center;
-    text-decoration: none;
     font-weight: 900;
     font-size: 18px;
 }
 
 .signupbtn:hover {
     background-color:#C00000;
-}
-
-.ts {
-    font-family: 'Papyrus', fantasy;
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-    padding-bottom:50px 0 100px;
 }
