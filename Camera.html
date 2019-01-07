@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+	<meta charset="utf-8">
+	<meta content="stuff, to, help, search, engines, not" name="keywords">
+	<meta content="What this page is about." name="description">
+	<meta content="Display Webcam Stream" name="title">
+		<title>Camera Page</title>
+  
+	<style>
+		#container {
+    	margin: 0px auto;
+    	width: 500px;
+    	height: 675px;
+    	border: 10px #333 solid;
+	}
+		#videoElement {
+    	width: 500px;
+    	height: 675px;
+    	background-color: #666;
+	}
+
+		#snap{
+		background-color: red;
+ 		color: white;
+  		padding: 14px 20px;
+  		margin: 18px 655px;
+  		border: none;
+  		cursor: pointer;
+  		width: 10%;
+  		text-align: center;
+	}
+	</style>
+		</head>
+  
+<body style="background-color: pink">
+<div id="container">
+    <video autoplay="true" id="videoElement">
+     
+    </video>
+</div>
+<script>
+ var video = document.querySelector("#videoElement");
+ 
+if (navigator.mediaDevices.getUserMedia) {       
+    navigator.mediaDevices.getUserMedia({video: true})
+  .then(function(stream) {
+    video.srcObject = stream;
+  })
+  .catch(function(err0r) {
+    console.log("Something went wrong!");
+  });
+}
+
+
+// Trigger photo take
+document.getElementById("snap").addEventListener("click", function() {
+	context.drawImage(video, 0, 0, 740, 480);
+});
+</script>
+
+<button id="snap">Snap!</button>
+
+</body>
+</html>
