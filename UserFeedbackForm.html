@@ -5,18 +5,17 @@
     <meta charset="utf-8" />
     <meta content="CopIT app" name="description" />
     <link rel="stylesheet" type="text/css" href="css/generalstyles.css" />
+    <link rel="stylesheet" type="text/css" href="css/userfeedbackform.css" />
   </head>
 
-  <body style="background-color:burlywood;">
+  <body>
     <header>
       <nav>
         <ul>
           <li><a href="CopIT_Homepage.html">HOME</a></li>
-          <li><a href="CopIT_Login.html">LOGIN</a></li>
+          <li><a href="camera.html">CAMERA</a></li>
           <li><a href="CopIT_ResultsPage.html">RESULTS</a></li>
-          <li><a href="CopIT_SignupPage.html">SIGNUP</a></li>
           <li><a href="UserFeedbackForm.html">USER FEEDBACK</a></li>
-          <li><a href="Camera.html">CAMERA</a></li>
         </ul>
       </nav>
     </header>
@@ -24,15 +23,25 @@
     <h1 id="title">CopIT</h1>
 
     <div class="container">
-      <p> Hello Valued User, we the development team for CopIT are still wondering how to provide you with the best service. We would greatly appreciate you quickly giving us your feedback.
+      <p> Hello Valued User, we the development team for CopIT are still wondering how to provide you with the best service. <br />We would greatly appreciate you quickly giving us your feedback.
       </p>
       
       <form>
-        Email:<br><input type="text" name="Email"><br>
-        Questions:<br><input type="text" name="Question"><br>
-        Suggestions:<br><input type="text" name="Suggestions"><br>
-        Favorite Feature:<br><input type="text" name="Top Feature"><br>
-        Would you recommend CopIT to a friend and why?:<br><input type="text" name="Recommend?"><br>
+        <label for="email">Email:</label>
+        <input type="text" name="email"><br />
+
+        <label for="question">Questions:</label>
+        <input type="text" name="question"><br />
+
+        <label for="suggestions">Suggestions:</label>
+        <input type="text" name="suggestions"><br />
+        
+        <label for="top_feature">Favorite Feature:</label>
+        <input type="text" name="top_feature"><br />
+        
+        <label for="recommend">Would you recommend CopIT to a friend and why?:</label>
+        <textarea name="recommend"></textarea><br />
+        <br />
         <input type="submit" value="Submit">
       </form>
     </div>
