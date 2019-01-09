@@ -5,15 +5,15 @@
 	<meta content="stuff, to, help, search, engines, not" name="keywords">
 	<meta content="What this page is about." name="description">
     <meta content="Display Webcam Stream" name="title">
-    <link rel=stylesheet 
-		<title>Camera Page</title>
+    <link rel=stylesheet type=text/css href=Camera.css>
+		<title>CopIT Camera</title>
   
 	<style>
 		#container {
     	margin: 0px auto;
     	width: 500px;
     	height: 675px;
-    	border: 10px #333 solid;
+    	border: 8px #8b0000 solid;
 	}
 		#videoElement {
     	width: 500px;
@@ -21,19 +21,25 @@
     	background-color: #666;
 	}
 		#snap{
-		background-color: red;
- 		color: white;
+		background-color: #8b0000;
+ 		color: burlywood;
   		padding: 14px 20px;
   		margin: 18px 655px;
   		border: none;
   		cursor: pointer;
   		width: 10%;
-  		text-align: center;
+			text-align: center;
+			font-family: Papyrus,fantasy;
+			font-weight: 900;
+			font-size: 24px;
 	}
 	</style>
 		</head>
   
-<body style="background-color: pink">
+<body style="background-color:burlywood">
+<div id=title>
+<h1>CopIT Clothing Capture</h1>
+</div>
 <div id="container">
     <video autoplay="true" id="videoElement">
      
@@ -57,7 +63,7 @@ document.getElementById("snap").addEventListener("click", function() {
 });
 </script>
 
-<button id="snap">Snap!</button>
+<a style="text-decoration:none" href="CopIT_ResultsPage.html" id="snap"> CopIT! </a>
 
 </body>
 </html>
