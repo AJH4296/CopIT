@@ -1,50 +1,33 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>LogIn.html</title>
-</head>
+	<html>
+		<head>
+			<link rel="stylesheet" type="text/css" href="LoginPage.css">
+			<title>Cop It.com</title>
+		</head>
 <body>
-	<style>
-	body{
-		background-color: pink;
-		font-family: arial;
-	}
-	input[type=text], input[type=password] {
-  		width: 100%;
-  		padding: 12px 20px;
-  		margin: 8px 0;
-  		display: inline-block;
-  		border: 1px solid #ccc;
-  		box-sizing: border-box;
-	}
 
-	.container{
-		background-color: beige;
-		padding: 10px;
-	}
-
-	button {
-  		background-color: red;
-  		color: white;
-  		padding: 14px 20px;
-  		margin: 8px 0;
-  		border: none;
-  		cursor: pointer;
-  		width: 100%;
-	}
-
-	</style>
-	<h1 style="text-align: center">Log In</h1>
-
+<form action="/action_page.php" >
   <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <h1>Sign In</h1>
+    <p>Please enter your credentials to sign in to your CopIT account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
+    
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
   </div>
+    <div class="clearfix">
+      <button type="button" class="cancelbtn" style="font-family: Times; font-weight:900;font-size:16px;">Cancel</button>
+      <button type="submit" class="loginbtn" style="font-family: Times; font-weight:900;font-size:16px;">Login</button>
+    </div>
+</form>
 
 </body>
 </html>
+         
