@@ -1,44 +1,35 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-	<meta charset="utf-8">
-	<meta content="stuff, to, help, search, engines, not" name="keywords">
-	<meta content="What this page is about." name="description">
-	<meta content="Display Webcam Stream" name="title">
-		<title>Camera Page</title>
+  <!doctype html>
+  <html>
+    <head>
+  <meta charset="utf-8">
+  <meta content="stuff, to, help, search, engines, not" name="keywords">
+  <meta content="What this page is about." name="description">
+    <meta content="Display Webcam Stream" name="title">
+    <link rel=stylesheet type=text/css href=css/Camera.css>
+    <title>CopIT Camera</title>  
+    </head>
   
-	<style>
-		#container {
-    	margin: 0px auto;
-    	width: 500px;
-    	height: 675px;
-    	border: 10px #333 solid;
-	}
-		#videoElement {
-    	width: 500px;
-    	height: 675px;
-    	background-color: #666;
-	}
-
-		#snap{
-		background-color: red;
- 		color: white;
-  		padding: 14px 20px;
-  		margin: 18px 655px;
-  		border: none;
-  		cursor: pointer;
-  		width: 50%;
-  		text-align: center;
-	}
-	</style>
-		</head>
-  
-<body style="background-color: burlywood">
+<body style="background-color:burlywood">
+   <header>
+        <nav>
+          <ul class="navholder">
+            <li class="nav"><a href="Homepage.html">HOME</a></li>
+            <li class="nav"><a href="Camera.html">CAMERA</a></li>
+            <li class="nav"><a href="Results.html">RESULTS</a></li>
+            <li class="nav"><a href="UserFeedbackForm.html">USER FEEDBACK</a></li>
+          </ul>
+        </nav>
+      </header>  
+<div id=title>
+<h1>CopIT Clothing Capture</h1>
+</div>
 <div id="container">
     <video autoplay="true" id="videoElement">
      
     </video>
 </div>
+
+<a style="text-decoration:none" href="Results.html" id="snap"> CopIT! </a>
 <script>
  var video = document.querySelector("#videoElement");
  
@@ -51,15 +42,10 @@ if (navigator.mediaDevices.getUserMedia) {
     console.log("Something went wrong!");
   });
 }
-
-
 // Trigger photo take
 document.getElementById("snap").addEventListener("click", function() {
-	context.drawImage(video, 0, 0, 640, 480);
+  context.drawImage(video, 0, 0, 740, 480);
 });
 </script>
-
-<a href="selected.html" id="snap">Snap</a>
-
 </body>
 </html>
