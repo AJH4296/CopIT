@@ -1,25 +1,43 @@
-body { background-color: pink; }
-
-#container {
-	margin: 0px auto;
-	width: 500px;
-	height: 675px;
-	border: 10px #333 solid;
+#snap {
+   font-family: times, fantasy;
+   font-size: 24px;
+}
+h1 {
+   text-align: center;
+   font-family: times, fantasy;
+   text-shadow: 2px 3px 4px #8b0000;
 }
 
-#snap{
-  background-color: red;
-  color: white;
-  padding: 14px 20px;
-  margin: 18px auto;
-  border: none;
-  cursor: pointer;
-  width: 10%;
-  text-align: center;
-}  
+li{
+    list-style-type:none;
+    font-family: times,fantasy;
+    font-weight: 600;
+}
 
-#videoElement {
-	width: 500px;
-	height: 675px;
-	background-color: #666;
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: burlywood;
+  }
+
+  .navholder{
+    text-align: center;
+}
+
+.nav{
+    display: inline;
+    text-decoration: none;  
+    text-align: center;
+}
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8b0000;
 }
