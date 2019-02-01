@@ -1,0 +1,50 @@
+  <!doctype html>
+  <html>
+    <head>
+  <meta charset="utf-8">
+  <meta content="stuff, to, help, search, engines, not" name="keywords">
+  <meta content="What this page is about." name="description">
+    <meta content="Display Webcam Stream" name="title">
+    <link rel=stylesheet type=text/css href=css/Camera.css>
+    <title>CopIT Camera</title>  
+    </head>
+  
+<body style="background-color:burlywood">
+   <header>
+        <nav>
+          <ul class="navholder">
+            <li class="nav"><a href="Homepage.html">HOME</a></li>
+            <li class="nav"><a href="Camera.html">CAMERA</a></li>
+            <li class="nav"><a href="UserFeedbackForm.html">USER FEEDBACK</a></li>
+          </ul>
+        </nav>
+      </header>  
+<div id=title>
+<h1>CopIT Clothing Capture</h1>
+</div>
+<div id="container">
+    <video autoplay="true" id="videoElement">
+     
+    </video>
+</div>
+
+<a style="text-decoration:none" href="Results.html" id="snap"> CopIT! </a>
+<script>
+ var video = document.querySelector("#videoElement");
+ 
+if (navigator.mediaDevices.getUserMedia) {       
+    navigator.mediaDevices.getUserMedia({video: true})
+  .then(function(stream) {
+    video.srcObject = stream;
+  })
+  .catch(function(err0r) {
+    console.log("Something went wrong!");
+  });
+}
+// Trigger photo take
+document.getElementById("snap").addEventListener("click", function() {
+  context.drawImage(video, 0, 0, 740, 480);
+});
+</script>
+</body>
+</html>
